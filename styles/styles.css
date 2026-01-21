@@ -34,6 +34,7 @@ main img {
     height: auto;
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 0;
+    box-shadow: #eee;
 }
 
 p {
