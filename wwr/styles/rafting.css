@@ -100,6 +100,44 @@ header nav a {
     margin-left: 12px;
 }
 
+/*adventure */
+/* Adventures section: horizontal figures */
+.adventures {
+    margin-top: 3rem;
+}
+
+.adventures h2 {
+    margin-bottom: 1rem;
+}
+
+.adventures-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+}
+
+/* Adventures section: horizontal figures */
+.adventures {
+    margin-top: 3rem;
+}
+
+.adventures h2 {
+    margin-bottom: 1rem;
+}
+
+.adventures-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+}
+
+.adventures figcaption {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    background-color: #e9f1f7;
+}
+
 /* Footer */
 footer {
     display: flex;
