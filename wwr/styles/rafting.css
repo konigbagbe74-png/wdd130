@@ -100,7 +100,27 @@ header nav a {
     margin-left: 12px;
 }
 
-/*adventure */
+.history {
+    margin-top: 2.5rem;
+}
+
+.history h2 {
+    margin-bottom: 1rem;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1.5fr);
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.history img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
 /* Adventures section: horizontal figures */
 .adventures {
     margin-top: 3rem;
@@ -110,25 +130,17 @@ header nav a {
     margin-bottom: 1rem;
 }
 
-.adventures-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 1rem;
+.adventures img {
+    width: 55%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
 }
 
-/* Adventures section: horizontal figures */
 .adventures {
-    margin-top: 3rem;
-}
-
-.adventures h2 {
-    margin-bottom: 1rem;
-}
-
-.adventures-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 1rem;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 10px;
 }
 
 .adventures figcaption {
