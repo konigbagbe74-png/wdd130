@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author"
       content="Contact White Water Rafting for questions, reservations, and customer support.">
@@ -73,17 +74,19 @@
                     <legend>Purpose of Message</legend>
 
                     <label>
-                        <input type="radio" id="general inquiry" value="general" required>
+                        <input type="radio" id="general inquiry" name="general inquiry"
+                          value="general" required>
                         General Inquiry
                     </label>
 
                     <label>
-                        <input type="radio" id="r question" value="reservation">
+                        <input type="radio" id="reservation question" name="reservation question"
+                          value="reservation">
                         Reservation Question
                     </label>
 
                     <label>
-                        <input type="radio" id="Suggestion" value="website">
+                        <input type="radio" id="Suggestion" name="Suggestion" value="website">
                         Website Suggestion
                     </label>
                 </fieldset>
@@ -92,7 +95,7 @@
                 <textarea id="message" name="message" rows="5" required></textarea>
 
                 <label class="checkbox">
-                    <input type="checkbox" id="subscribe">
+                    <input type="checkbox" name="subscribe" id="subscribe">
                     Please subscribe me to the monthly newsletter
                 </label>
 
