@@ -1,0 +1,155 @@
+/* Color & font variables */
+:root {
+    --primary-color: #0b3c5d;
+    --accent1-color: #1d2731;
+    --accent2-color: #f4f4f4;
+
+    --heading-font: "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+header img {
+    height: 60px;
+}
+
+header nav a {
+    color: var(--accent2-color);
+    text-decoration: none;
+    margin-left: 12px;
+    font-weight: bold;
+}
+
+/* Hero section */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    background-color: var(--accent1-color);
+    color: white;
+    opacity: 0.8;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 16px;
+    border-radius: 4px;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 12px;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    gap: 1.5rem;
+
+}
+
+.history h2,
+.adventures h2 {
+    grid-column: 1/-1;
+}
+
+.history img,
+.adventures img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+/* Adventures section: horizontal figures */
+.adventures {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.adventures figcaption {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    background-color: #e9f1f7;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+
+footer p {
+    color: #1d2731
+}
+
+.socialmedia a {
+    text-decoration: none;
+    margin-right: 8px;
+}
+
+.socialmedia img {
+    width: 24px;
+    height: 24px;
+}
