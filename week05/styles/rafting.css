@@ -1,0 +1,109 @@
+/* Global Layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background: #0b3d91;
+    padding: 1rem;
+    color: white;
+}
+
+header img {
+    height: 60px;
+    margin-right: 1rem;
+}
+
+nav a {
+    color: white;
+    margin-right: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a.active {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+h1,
+h2 {
+    color: #0b3d91;
+}
+
+/* Company Info */
+.company-info .map iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
+
+/* Employees */
+.employee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.employee-grid img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+/* Contact Form */
+form {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+fieldset {
+    border: 1px solid #aaa;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+button {
+    background: #0b3d91;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #072c6b;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #eee;
+    margin-top: 2rem;
+}
