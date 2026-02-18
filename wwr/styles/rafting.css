@@ -102,10 +102,10 @@ button:hover {
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 1rem;
-    background: #eee;
-    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
 }
 
 .socialmedia a {
